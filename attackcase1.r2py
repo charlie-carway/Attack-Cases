@@ -1,0 +1,10 @@
+# Attack Case #1 against a weak Ref. Mon.
+f "testfile.txt.a" in listfiles():
+    removefile("testfile.txt.a")
+if "testfile.txt.b" in listfiles():
+    removefile("testfile.txt.b")
+myfile = ABopenfile("testfile.txt", True)  # Create an AB file
+assert ('SE' == myfile.readat(None, 0))
+myfile.writeat("yzE", -3)
+assert ('SE' == myfile.readat(None, 0))
+myfile.close()
