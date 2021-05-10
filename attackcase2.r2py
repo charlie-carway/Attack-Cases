@@ -1,3 +1,4 @@
+# Attack Case #2 against a weak Ref. Mon.
 if "testfile.txt.a" in listfiles():
     removefile("testfile.txt.a")
 if "testfile.txt.b" in listfiles():
