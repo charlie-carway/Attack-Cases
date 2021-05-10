@@ -4,9 +4,9 @@ if "testfile.txt.a" in listfiles():
 if "testfile.txt.b" in listfiles():
     removefile("testfile.txt.b")
 myfile = ABopenfile("testfile.txt",True)  
-assert ('SE' == myfile.readat(None,0))
+assert('SE' == myfile.readat(None,0))
 myfile.readat(1000, 100)
-assert ('SE' == myfile.readat(None,0))
+assert('SE' == myfile.readat(None,0))
 myfile.writeat("yzE", -3)                 ## add'l code to avoid breaking hardened RM 
-assert ('SE' == myfile.readat(None, 0))   ## add'l code to avoid breaking hardened RM
+assert('SE' == myfile.readat(None, 0))   ## add'l code to avoid breaking hardened RM
 myfile.close() 
