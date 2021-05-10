@@ -7,5 +7,6 @@ myfile = ABopenfile("testfile.txt",True)  # Create an AB file
 assert('' == myfile.readat(None, None))
 assert ('SE' == myfile.readat(None, 0))
 myfile.writeat("yzE", -3)
-assert ('SE' == myfile.readat(None, 0))
+# assert ('SE' == myfile.readat(None, 0))
+assert ('SE' == myfile.readat(-1, 0))
 myfile.close()
