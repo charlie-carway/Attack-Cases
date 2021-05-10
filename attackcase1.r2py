@@ -6,7 +6,7 @@ if "testfile.txt.b" in listfiles():
 myfile = ABopenfile("testfile.txt",True)  # Create an AB file
 # assert('' == myfile.readat(None, None))
 # assert('SE' == myfile.readat(None, 0))
-myfile.writeat("yzE", -2)
+myfile.writeat("yzE", -2)     # causes Failed case, Tests on a working reference monitor that has an issue with file lengths. (3.0/3.0)
 assert('SE' == myfile.readat(None, 0))
 # assert ('SE' == myfile.readat(-1, 0))
 myfile.close()
