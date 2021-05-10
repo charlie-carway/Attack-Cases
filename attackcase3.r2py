@@ -5,5 +5,5 @@ if "testfile.txt.b" in listfiles():
     removefile("testfile.txt.b")
 # myfile = ABopenfile("testfile.txt",True)  
 myfile = ABopenfile("testfile.txt",False)  
-assert('' == myfile.readat(None, None))  ## no. 2 - add'l code to avoid breaking hardened RM
+assert('' == myfile.readat(None, None))  # no. 2 - add'l code to avoid breaking hardened RM
 myfile.close() 
