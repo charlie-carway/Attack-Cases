@@ -4,8 +4,8 @@ if "testfile.txt.a" in listfiles():
 if "testfile.txt.b" in listfiles():
     removefile("testfile.txt.b")
 myfile = ABopenfile("testfile.txt",True)  # Create an AB file
-assert('' == myfile.readat(None, None))
-assert('SE' == myfile.readat(None, 0))
+# assert('' == myfile.readat(None, None))
+# assert('SE' == myfile.readat(None, 0))
 myfile.writeat("yzE", -2)
 assert('SE' == myfile.readat(None, 0))
 # assert ('SE' == myfile.readat(-1, 0))
